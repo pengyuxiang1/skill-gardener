@@ -1,0 +1,4 @@
+.DS_Store
+
+# local private config (see references/config.example.md)
+create-grow-skill/references/config.md
