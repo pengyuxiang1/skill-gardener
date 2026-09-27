@@ -1,6 +1,6 @@
-# create-grow-skill
+# skill-gardener
 
-**一个把 skill 乱局管成图书馆的元技能 —— 聚类同类 skill 到一个 controller 后面，让经验持续累积。**
+**一个给 skill 当园丁的元技能 —— 聚拢同类 skill 到一个 controller 后面，让经验随任务持续生长。**
 
 **中文** | [English](README.md)
 
@@ -8,7 +8,7 @@
 
 **grow-skill = 某个领域里唯一的运行时入口：路由（什么场景用什么工具）+ 沉淀（踩过的每个坑都记下来，只增不覆盖）。**
 
-姊妹仓库：**[skillforge](https://github.com/pengyuxiang1/skillforge)** —— 把一个工作流锻造成超级 skill（状态机 + 引导脚本 + 门禁 hook）。skillforge 负责把一个 skill 造好，create-grow-skill 负责管好一群。
+姊妹仓库：**[skillforge](https://github.com/pengyuxiang1/skillforge)** —— 把一个工作流锻造成超级 skill（状态机 + 引导脚本 + 门禁 hook）。skillforge 负责把一个 skill 造好，skill-gardener 负责管好一群。
 
 ---
 
@@ -41,15 +41,15 @@
 ### 方式一：npx skills（推荐，支持 79 个 Agent，含 CodeBuddy）
 
 ```bash
-npx skills add pengyuxiang1/create-grow-skill                       # 自动检测已装的 agent
-npx skills add pengyuxiang1/create-grow-skill -a codebuddy -g -y    # 指定 agent + 全局 + 免确认
+npx skills add pengyuxiang1/skill-gardener                       # 自动检测已装的 agent
+npx skills add pengyuxiang1/skill-gardener -a codebuddy -g -y    # 指定 agent + 全局 + 免确认
 ```
 
 ### 方式二：安装脚本
 
 ```bash
-git clone https://github.com/pengyuxiang1/create-grow-skill.git
-cd create-grow-skill
+git clone https://github.com/pengyuxiang1/skill-gardener.git
+cd skill-gardener
 ./install.sh                          # 自动检测已装的 agent
 ./install.sh --agent codebuddy        # 或：codebuddy / claude-code / codex / cursor
 ./install.sh --link                   # 软链代替复制（方便更新）
@@ -58,14 +58,14 @@ cd create-grow-skill
 免 clone：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/create-grow-skill/main/install.sh | bash -s -- --agent codebuddy
+curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/skill-gardener/main/install.sh | bash -s -- --agent codebuddy
 ```
 
 ### 方式三：让 agent 自己装
 
 把下面这句丢给你的 AI 编程助手：
 
-> Clone 本仓库，把 `create-grow-skill/` 目录安装到你的 skills 目录（CodeBuddy：`~/.codebuddy/skills/`，Claude Code：`~/.claude/skills/`）。
+> Clone 本仓库，把 `skill-gardener/` 目录安装到你的 skills 目录（CodeBuddy：`~/.codebuddy/skills/`，Claude Code：`~/.claude/skills/`）。
 
 ## 快速开始
 

@@ -1,4 +1,4 @@
-# create-grow-skill 本地配置（模板）
+# skill-gardener 本地配置（模板）
 
 > 复制本文件为同目录下的 `config.md`（已被 .gitignore 排除，不会提交），按需填写。
 > `config.md` 是你的私有配置区：更新 skill（拉开源新版覆盖 SKILL.md / templates.md）时它保持不动，是唯一需要自己维护的文件。
@@ -16,7 +16,7 @@ SKILL.md 的 Step 0 会先检查本文件：存在 `config.md` 时优先按它�
 ## 模板
 
 ```markdown
-# create-grow-skill 本地配置（私有，勿分发）
+# skill-gardener 本地配置（私有，勿分发）
 
 ## 路径
 

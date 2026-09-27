@@ -1,6 +1,6 @@
-# create-grow-skill
+# skill-gardener
 
-**A meta-skill that turns skill chaos into a library — cluster similar skills behind one controller, and let experience accumulate.**
+**A meta-skill that gardens your skills — cluster similar ones behind a controller, and let experience grow with every task.**
 
 [中文](README.zh-CN.md) | **English**
 
@@ -8,7 +8,7 @@
 
 **A grow-skill is the single runtime entry for one domain: it routes (which tool for which scenario) and it accumulates (every pit you hit, written down, never overwritten).**
 
-Companion repo: **[skillforge](https://github.com/pengyuxiang1/skillforge)** — forges one workflow into a *super skill* (state machine + guide script + gate hook). skillforge builds one skill well; create-grow-skill governs the herd.
+Companion repo: **[skillforge](https://github.com/pengyuxiang1/skillforge)** — forges one workflow into a *super skill* (state machine + guide script + gate hook). skillforge builds one skill well; skill-gardener governs the herd.
 
 ---
 
@@ -41,15 +41,15 @@ External skill updated? It overwrites the body in the hub — the controller's e
 ### Option 1: npx skills (recommended — 79 agents supported, CodeBuddy included)
 
 ```bash
-npx skills add pengyuxiang1/create-grow-skill                       # auto-detects installed agents
-npx skills add pengyuxiang1/create-grow-skill -a codebuddy -g -y    # pick agent + global + no prompts
+npx skills add pengyuxiang1/skill-gardener                       # auto-detects installed agents
+npx skills add pengyuxiang1/skill-gardener -a codebuddy -g -y    # pick agent + global + no prompts
 ```
 
 ### Option 2: install script
 
 ```bash
-git clone https://github.com/pengyuxiang1/create-grow-skill.git
-cd create-grow-skill
+git clone https://github.com/pengyuxiang1/skill-gardener.git
+cd skill-gardener
 ./install.sh                          # auto-detects installed agents
 ./install.sh --agent codebuddy        # or: codebuddy / claude-code / codex / cursor
 ./install.sh --link                   # symlink instead of copy (easy to update)
@@ -58,14 +58,14 @@ cd create-grow-skill
 No clone needed:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/create-grow-skill/main/install.sh | bash -s -- --agent codebuddy
+curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/skill-gardener/main/install.sh | bash -s -- --agent codebuddy
 ```
 
 ### Option 3: let your agent do it
 
 Paste this to your AI coding agent:
 
-> Clone this repo and install the `create-grow-skill/` directory into your skills directory (CodeBuddy: `~/.codebuddy/skills/`, Claude Code: `~/.claude/skills/`).
+> Clone this repo and install the `skill-gardener/` directory into your skills directory (CodeBuddy: `~/.codebuddy/skills/`, Claude Code: `~/.claude/skills/`).
 
 ## Quick start
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
-# create-grow-skill installer
+# skill-gardener installer
 # ---------------------------
-# Install the create-grow-skill meta-skill into one or more AI agents' skills directory.
+# Install the skill-gardener meta-skill into one or more AI agents' skills directory.
 #
 # Usage:
 #   ./install.sh                          # install for every detectable agent
@@ -13,15 +13,15 @@
 #   ./install.sh --list-agents            # show all supported agents and their paths
 #
 # One-liner (no clone needed):
-#   curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/create-grow-skill/main/install.sh | bash -s -- --agent codebuddy
+#   curl -fsSL https://raw.githubusercontent.com/pengyuxiang1/skill-gardener/main/install.sh | bash -s -- --agent codebuddy
 #
 # Paths follow the vercel-labs/skills (npx skills) agent mapping, the de-facto standard.
-# For the full list of 79 supported agents run: npx skills add <owner>/create-grow-skill --agent list
+# For the full list of 79 supported agents run: npx skills add <owner>/skill-gardener --agent list
 #
 set -euo pipefail
 
-SKILL_NAME="create-grow-skill"
-REPO_URL="${CREATE_GROW_SKILL_REPO:-https://github.com/pengyuxiang1/create-grow-skill.git}"
+SKILL_NAME="skill-gardener"
+REPO_URL="${SKILL_GARDENER_REPO:-https://github.com/pengyuxiang1/skill-gardener.git}"
 
 MODE="copy"
 AGENTS=()
@@ -146,7 +146,7 @@ else
 fi
 
 # --- install ----------------------------------------------------------------
-echo "create-grow-skill installer"
+echo "skill-gardener installer"
 echo "==========================="
 echo
 info "source : $SRC_DIR"

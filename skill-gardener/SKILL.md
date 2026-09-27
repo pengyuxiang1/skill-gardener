@@ -1,9 +1,9 @@
 ---
-name: create-grow-skill
-description: 元技能：聚合同类型互补的多个 skill（或为单个外部 skill 包壳），创建"经验沉淀+skill路由"型的 grow-skill（如 browser-controller）。引擎无关、路径可配置（CodeBuddy/Claude Code/Codex 等均可使用），首次使用有前置初始化引导，适配任意 hub 安装路径。当用户想为某类工具（浏览器/数据库/部署/文档处理等）建立统一入口、想给外部 skill 沉淀使用经验、想创建 XX-controller 类 skill 时使用。触发词：创建controller、聚合同类skill、grow skill、经验沉淀层、统一工具入口、包壳外部skill、初始化grow-skill、skill管理仓库。
+name: skill-gardener
+description: 元技能：聚合同类型互补的多个 skill（或为单个外部 skill 包壳），创建"经验沉淀+skill路由"型的 grow-skill（如 browser-controller）。引擎无关、路径可配置（CodeBuddy/Claude Code/Codex 等均可使用），首次使用有前置初始化引导，适配任意 hub 安装路径。当用户想为某类工具（浏览器/数据库/部署/文档处理等）建立统一入口、想给外部 skill 沉淀使用经验、想创建 XX-controller 类 skill 时使用。触发词：创建controller、聚合同类skill、grow skill、经验沉淀层、统一工具入口、包壳外部skill、初始化skill-gardener、skill管理仓库、skill园丁。
 ---
 
-# create-grow-skill —— 创建成长型 controller skill 的元技能
+# skill-gardener —— 培育成长型 controller skill 的元技能
 
 ## 一、什么是 grow-skill
 
@@ -97,9 +97,9 @@ grow-skill = 某个领域里**唯一的运行时入口**，只做两件事：
 ## 四、grow-skill 的维护规则（写进每个 controller 的 SKILL.md）
 
 1. 经验只追加到 controller 自己的 `references/experience.md`，**不写入 hub**（hub 是纯安装目录）
-2. 新坑格式：`日期 | 坑 | 绕法`，错误认知写"实测修正"保留轨迹
+2. 新坑格式：`日期 | 坑 | 绕法 | 版本`（版本 = 针对的外部工具版本，如 bsk CLI 0.1.11），错误认知写"实测修正"保留轨迹
 3. 完整案例（方法论+协议+产物）→ 新建 `references/cases/<站点或场景>-capture.md`
-4. 官方 skill 升级 → 按 hub INDEX.md 的同步命令更新本体，经验层不动
+4. 官方 skill 升级 → 按 hub INDEX.md 的同步命令更新本体，经验层不动；**升级后逐条复核坑表受影响条目**（借鉴 OKF 可信度机制）：仍成立的更新版本列，已被新版本修正的标「已失效（vX.Y 已修复）」但不删除，保留轨迹
 5. 路由表变化（新工具/新场景）→ 双写：controller SKILL.md + hub INDEX.md
 
 ## 五、命名与登记
